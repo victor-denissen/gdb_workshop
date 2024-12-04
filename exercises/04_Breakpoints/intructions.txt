@@ -4,7 +4,7 @@ break {func/file:line}
 info breakpoints
 	to see a list of all breakpoints/watchpoints/catchpoints, enabled or disabled
 
-delete {breakpoint_nu}
+delete/d {breakpoint_nu}
 	to delete the given breakpoint
 
 disable/enable {breakpoint_nu}
