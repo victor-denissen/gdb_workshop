@@ -1,0 +1,28 @@
+Compile the program with the -g flag
+	cc -g {files}
+
+Run gdb
+	gdb {Program_name}
+
+lay src
+	go to the source layout
+
+Breakpoints tell the debugger when to stop running the code and to go into step by step mode
+	break/b {func_name}	This will break at a certain function
+	break/b {file_name}:{line_number} This will break at a certain line on a file
+
+run/r (optional){cmd_arg1} {cmd_arg2} {cmd_arg...}
+	Now we need to start running the program, you can do this with the run command
+
+next/n
+	With the step over command you will you go over the code, executing any function calls when they appear
+
+kill
+	To stop the currently running program
+
+quit
+	To quit gdb
+
+if you want to rerun the program from the start you can just do the run/r command again
+
+# TIP, if you want to re-enter the same command, you can just press enter without typing anything

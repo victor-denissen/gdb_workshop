@@ -1,0 +1,9 @@
+step/s
+	The step into command is similar to step over, but the difference lies in that it will go into the functions
+
+finnish
+	To finish the current function use this command
+
+until {line_number}
+	to continue running the program until a certain line use this command
+	this is usefull for skipping loops

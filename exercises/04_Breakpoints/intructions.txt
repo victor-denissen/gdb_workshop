@@ -1,0 +1,23 @@
+break {func/file:line}
+	to create a breakpoint at this location, when running the program it will stop here
+
+info breakpoints
+	to see a list of all breakpoints/watchpoints/catchpoints, enabled or disabled
+
+delete {breakpoint_nu}
+	to delete the given breakpoint
+
+disable/enable {breakpoint_nu}
+	to disable/enable certain breakpoints
+
+break if {cond}
+	set a breakboint with a condition
+
+condition {bnum} {cond}
+	set a condition for an existing breakpoint
+
+condition {bnum}
+	remove all conditions for an existing breakpoint
+
+watch {var}
+	print out the var value when the value changes, also acts as a breakpoint

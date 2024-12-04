@@ -1,0 +1,15 @@
+bt
+	gives a full backtrace to see how you got where you are
+	this is a list of frames
+
+bt -full
+	also gives all the locals variables
+
+frame {fnum}
+	show given frame
+
+up (optional){nu}(default=1)
+	go up {nu} frames, towards older frames
+
+down (optional){nu}(default=1)
+	go down {nu} frames, towards newer frames

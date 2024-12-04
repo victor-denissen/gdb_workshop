@@ -1,0 +1,20 @@
+print {var}
+	print out the variable value
+
+display {var}
+	print the var val after each following command
+
+info display
+	shows all current displays
+
+disable/enable display {dnum}
+	disables/enables the given display
+
+delete display {dnum}
+	deletes the given display
+
+info locals
+	print out all local variables
+
+info args
+	print out all function argument values
