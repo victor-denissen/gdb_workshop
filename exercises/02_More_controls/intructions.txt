@@ -7,3 +7,18 @@ finnish
 until {line_number}
 	to continue running the program until a certain line use this command
 	this is usefull for skipping loops
+
+ctrl + p
+	go to prev command
+
+ctrl + n
+	go to next command
+
+ctrl + b
+	move cursor one back
+
+ctrl + f
+	move cursor one forward
+
+arrow keys
+	Move the source section around
