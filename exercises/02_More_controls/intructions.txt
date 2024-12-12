@@ -1,7 +1,7 @@
 step/s
 	The step into command is similar to step over, but the difference lies in that it will go into the functions
 
-finnish
+finish
 	To finish the current function use this command
 
 until {line_number}
