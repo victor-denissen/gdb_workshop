@@ -1,6 +1,9 @@
 step/s
 	The step into command is similar to step over, but the difference lies in that it will go into the functions
 
+next/n
+	With the step over command you will you go over the code, executing any function calls when they appear
+
 finish/fin
 	To finish the current function use this command
 

@@ -1,8 +1,8 @@
-bt
+backtrace/bt
 	gives a full backtrace to see how you got where you are
 	this is a list of frames
 
-bt -full
+backtrace/bt -full
 	also gives all the locals variables
 
 frame {fnum}
