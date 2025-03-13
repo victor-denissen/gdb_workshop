@@ -1,0 +1,138 @@
+------------------------------------------------
+Basic controls
+------------------------------------------------
+
+cc -g {files}
+	Compile the program with the -g flag
+
+gdb {Program_name}
+	Run gdb
+
+lay src
+	go to the source layout
+
+break/b {func_name}
+break/b {file_name}:{line_number}
+	Create a breakpoint on a certain func or line in a file
+	Breakpoints tell the debugger when to stop running the code and to go into step by step mode
+
+run/r {cmd_arg1} {cmd_arg2} {cmd_arg...}
+	Now we need to start running the program, you can do this with the run command
+	If you want program arguments you can give them here
+
+
+kill
+	To stop the currently running program
+
+quit
+	To quit gdb
+
+
+------------------------------------------------
+controlling program execution
+------------------------------------------------
+
+step/s
+	The step into command is similar to step over, but the difference lies in that it will go into the functions
+
+next/n
+	With the step over command you will you go over the code, executing any function calls when they appear
+
+finish/fin
+	To finish the current function use this command
+
+until {line_number}
+	to continue running the program until a certain line use this command
+	this is usefull for skipping loops
+
+continue/c
+	Restart program execution until either end of program or a breakpoint
+
+
+------------------------------------------------
+controlling the gdb prompt
+------------------------------------------------
+
+ctrl + p
+	go to prev command
+
+ctrl + n
+	go to next command
+
+ctrl + b
+	move cursor one back
+
+ctrl + f
+	move cursor one forward
+
+arrow keys
+	Move the source section around
+
+
+------------------------------------------------
+variable inspection
+------------------------------------------------
+print {var}
+	print out the variable value
+
+display {var}
+	print the var val after each following command
+
+info display
+	shows all current displays
+
+disable/enable display {dnum}
+	disables/enables the given display
+
+delete display {dnum}
+	deletes the given display
+
+info locals
+	print out all local variables
+
+info args
+	print out all function argument values
+
+
+------------------------------------------------
+Breakpoints
+------------------------------------------------
+info breakpoints
+	to see a list of all breakpoints/watchpoints/catchpoints, enabled or disabled
+
+delete/d {breakpoint_nu}
+	to delete the given breakpoint
+
+disable/enable {breakpoint_nu}
+	to disable/enable certain breakpoints
+
+break if {cond}
+	set a breakboint with a condition
+
+condition {bnum} {cond}
+	set a condition for an existing breakpoint
+
+condition {bnum}
+	remove all conditions for an existing breakpoint
+
+watch {var}
+	print out the var value when the value changes, also acts as a breakpoint
+
+------------------------------------------------
+Frame control
+------------------------------------------------
+backtrace/bt
+	gives a full backtrace to see how you got where you are
+	this is a list of frames
+
+backtrace/bt -full
+	also gives all the locals variables
+
+frame {fnum}
+	show given frame
+
+up (optional){nu}(default=1)
+	go up {nu} frames, towards older frames
+
+down (optional){nu}(default=1)
+	go down {nu} frames, towards newer frames
