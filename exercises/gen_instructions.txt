@@ -1,4 +1,0 @@
-{} in commands means that you should replace it
-	e.g. cc -g {files} --> cc -g main.c utils.c
-
-() in command are just extra info, they should not be in the command
