@@ -1,8 +1,13 @@
 #include <time.h>
 #include <stdio.h>
 #include <stdlib.h>
-int	main(void)
+int	main(int argc, char **argv)
 {
+    // Try to print argv[0], this will print the program name
+    // If you have given more args through run (eg. run test), try to print argv[1]
+    // This should now print test
+
+
     // This is to seed the randomness
     srand(time(NULL));
 

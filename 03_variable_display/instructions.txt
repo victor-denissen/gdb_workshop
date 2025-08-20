@@ -1,3 +1,7 @@
+run/r {cmd_arg1} {cmd_arg2} {cmd_arg...}
+    Now we need to start running the program, you can do this with the run command
+    If you want program arguments you can give them here
+
 print {var}
 	print out the variable value
 
